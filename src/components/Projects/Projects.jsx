@@ -14,32 +14,34 @@ import portfolioImg from "../../Assets/Projects/webagent.png";
 // ProjectCard Component
 function ProjectCard(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      <Card.Body style={{ display: "flex", flexDirection: "column", flex: "1" }}>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text style={{ textAlign: "justify", flex: "1" }}>
           {props.description}
         </Card.Text>
 
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp; GitHub
-          </Button>
-        )}
+        <div style={{ marginTop: "auto", paddingTop: "10px" }}>
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp; GitHub
+            </Button>
+          )}
 
-        {" "}
+          {" "}
 
-        {props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            Demo
-          </Button>
-        )}
+          {props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              Demo
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
-import myImg from "../../Assets/ragul1.jpg"; // You can replace with your photo path
+import myImg from "../../Assets/avatar.png"; // You can replace with your photo path
 import Particle from "../Particle";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
