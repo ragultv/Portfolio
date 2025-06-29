@@ -5,7 +5,8 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMedium } from "react-icons/fa";
+import { FaM } from "react-icons/fa6";
 
 
 function Footer() {
@@ -32,17 +33,17 @@ function Footer() {
   </li>
   <li className="social-icons">
     <a
-      href="https://twitter.com/"
+      href="https://medium.com/@ragul2607"
       target="_blank"
       rel="noreferrer"
       className="icon-colour home-social-icons"
     >
-      <AiOutlineTwitter />
+      <FaMedium />
     </a>
   </li>
   <li className="social-icons">
     <a
-      href="https://www.linkedin.com/in/"
+      href="https://www.linkedin.com/in/ragul-t-/"
       target="_blank"
       rel="noreferrer"
       className="icon-colour home-social-icons"
@@ -52,7 +53,7 @@ function Footer() {
   </li>
   <li className="social-icons">
     <a
-      href="https://www.instagram.com/ragul-t"
+      href="https://www.instagram.com/raxxgul/"
       target="_blank"
       rel="noreferrer"
       className="icon-colour home-social-icons"
@@ -75,7 +76,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/rahul4coding"
+                href="https://github.com/ragultv"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -85,17 +86,17 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/rahuuulbhatija"
+                href="https://medium.com/@ragul2607"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <FaMedium />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/rahul-bhatija/"
+                href="https://www.linkedin.com/in/ragul-t-/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -105,7 +106,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/rahul.bhatija"
+                href="https://www.instagram.com/raxxgul/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

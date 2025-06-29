@@ -6,6 +6,7 @@ import About from "./components/About/About.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import Resume from "./components/Resume/ResumeNew.jsx";
+import Experience from "./components/Experience/Experience.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

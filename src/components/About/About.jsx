@@ -12,7 +12,9 @@ import {
   DiReact,
   DiNodejs,
   DiGit,
+  DiGithub,
 } from "react-icons/di";
+import { FaRobot } from "react-icons/fa"; // generic AI icon
 
 import {
   SiAngular,
@@ -36,6 +38,11 @@ import {
   SiHuggingface,
   SiFlask,
   SiDjango,
+  SiOllama,
+  SiGooglecolab,
+  SiKaggle,
+  SiJupyter,
+  SiOpenai
 } from "react-icons/si";
 
 import { VscCode } from "react-icons/vsc";
@@ -51,20 +58,19 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi, I'm <span className="purple">Ragul</span>, a passionate AI and ML enthusiast currently pursuing B.Tech in AIML at SNS College of Technology, Coimbatore.
             <br /><br />
-            I’ve completed ML internships at Cognifyz Technologies and The Reciprocal Solutions, where I built machine learning models, deployed APIs using Flask, and worked with PyTorch, OCR, and Docker-based deployments.
-            <br /><br />
             I love building real-world AI projects. Some of my work includes:
             <ul>
-              <li><strong>QuickPrep</strong> – AI-powered quiz generator tool for students and job seekers.</li>
-              <li><strong>IMP AI</strong> – AI-based missing data imputation tool.</li>
-              <li><strong>NANOTRACK</strong> – Lightweight library for real-time object detection (5K+ downloads).</li>
-              <li><strong>Smart Face Attendance</strong> – Facial recognition-based attendance system.</li>
-              <li><strong>Animal Detection System</strong> – Farmland animal intrusion alert using MobileNet + Twilio.</li>
+              <li><strong className="purple">QuickPrep</strong> – AI-powered quiz generator tool for students and job seekers.</li>
+              <li><strong className="purple">WebAgent</strong> – AI-powered website generator tool.</li>
+              <li><strong className="purple">IMP AI</strong> – AI-based missing data imputation tool.</li>
+              <li><strong className="purple">NANOTRACK</strong> – Lightweight python library for real-time multi-object tracking (5K+ downloads).</li>
+              <li><strong className="purple">Smart Face Attendance</strong> – Facial recognition-based attendance system.</li>
+              <li><strong className="purple">Animal Detection System</strong> – Farmland animal intrusion alert using MobileNet + Twilio.</li>
             </ul>
             <br />
             I’m proficient in Python, FastAPI, Flask, OpenCV, Scikit-learn, PyTorch, Docker, Git, and PostgreSQL.
             <br /><br />
-            My goal is to build intelligent solutions with LLMs, Computer Vision, and Generative AI that solve practical problems. Outside of tech, I enjoy reading, exploring new places, and yoga.
+            My goal is to build intelligent solutions with LLMs, Computer Vision, and Generative AI that solve practical problems. Outside of tech, I enjoy reading and exploring new places.
           </p>
         </blockquote>
       </Card.Body>
@@ -83,20 +89,26 @@ function Techstack() {
         <Col xs={4} md={2} className="tech-icons"><DiJavascript1 /><p className="tech-name">JavaScript</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiMysql /><p className="tech-name">MySQL</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiPostgresql /><p className="tech-name">PostgreSQL</p></Col>
-
       </Row>
 
-      {/* AI/ML & Data */}
+      {/* AI/ML & Data Science */}
+      <h2 style={{ color: "white", textAlign: "center", marginBottom: "30px", fontSize: "1.5em", marginTop: "40px" }}>
+        AI/ML & <strong className="purple">Data Science</strong>
+      </h2>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons"><SiPytorch /><p className="tech-name">PyTorch</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiScikitlearn /><p className="tech-name">Scikit-learn</p></Col>
+        <Col xs={4} md={2} className="tech-icons"><SiOpenai /><p className="tech-name">OpenAI</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiOpencv /><p className="tech-name">OpenCV</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiNumpy /><p className="tech-name">NumPy</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiPandas /><p className="tech-name">Pandas</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiR /><p className="tech-name">R Language</p></Col>
       </Row>
 
-      {/* Web Technologies */}
+      {/* Web Development */}
+      <h2 style={{ color: "white", textAlign: "center", marginBottom: "30px", fontSize: "1.5em", marginTop: "40px" }}>
+        Web <strong className="purple">Development</strong>
+      </h2>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons"><SiFastapi /><p className="tech-name">FastAPI</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiFlask /><p className="tech-name"> Flask</p></Col>
@@ -104,9 +116,9 @@ function Techstack() {
         <Col xs={4} md={2} className="tech-icons"><DiReact /><p className="tech-name">React</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiHtml5 /><p className="tech-name">HTML</p></Col>
         <Col xs={4} md={2} className="tech-icons"><SiCss3 /><p className="tech-name">CSS</p></Col>
+        <Col xs={4} md={2} className="tech-icons"><DiJavascript1 /><p className="tech-name">JavaScript</p></Col>
+
       </Row>
-
-
     </>
   );
 }
@@ -117,13 +129,19 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {/* DevOps & Tools */}
       <Col xs={4} md={2} className="tech-icons"><DiGit /><p className="tech-name">Git</p></Col>
+      <Col xs={4} md={2} className="tech-icons"><DiGithub /><p className="tech-name">Github</p></Col>
       <Col xs={4} md={2} className="tech-icons"><FaDocker /><p className="tech-name">Docker</p></Col>
       <Col xs={4} md={2} className="tech-icons"><SiLangchain /><p className="tech-name">Langchain</p></Col>
       <Col xs={4} md={2} className="tech-icons"><SiHuggingface /><p className="tech-name">Huggingface</p></Col>
-
+      <Col xs={4} md={2} className="tech-icons"><FaRobot/><p className="tech-name">LM Studio</p></Col>
+      <Col xs={4} md={2} className="tech-icons"><SiOllama /><p className="tech-name">Ollama</p></Col>
       <Col xs={4} md={2} className="tech-icons"><SiPostman /><p className="tech-name">Postman</p></Col>
       <Col xs={4} md={2} className="tech-icons"><VscCode /><p className="tech-name">VS Code</p></Col>
       <Col xs={4} md={2} className="tech-icons"><SiFigma /><p className="tech-name">Figma</p></Col>
+      <Col xs={4} md={2} className="tech-icons"><SiGooglecolab /><p className="tech-name">Colab</p></Col>
+      <Col xs={4} md={2} className="tech-icons"><SiKaggle /><p className="tech-name">Kaggle</p></Col>
+      <Col xs={4} md={2} className="tech-icons"><SiJupyter /><p className="tech-name">Jupyter</p></Col>
+
     </Row>
   );
 }
@@ -172,9 +190,14 @@ function About() {
         <h1 className="project-heading">
           Tech<strong className="purple"> Skills</strong>
         </h1>
+        
+        {/* Programming Languages & Databases */}
+        <h2 style={{ color: "white", textAlign: "center", marginBottom: "30px", fontSize: "1.5em" }}>
+          Programming Languages & <strong className="purple">Databases</strong>
+        </h2>
         <Techstack />
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Tools</strong> I Use
         </h1>
         <Toolstack />
         <Github />

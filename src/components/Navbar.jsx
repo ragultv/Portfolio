@@ -12,8 +12,10 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  
+  
 } from "react-icons/ai";
-
+import { MdWork } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -39,7 +41,19 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          Ragul T
+          <span style={{
+            fontSize: "1.8em",
+            fontWeight: "bold",
+            background: "linear-gradient(135deg, #c770f0, #9c44d6)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            textShadow: "0 2px 4px rgba(199, 112, 240, 0.3)",
+            letterSpacing: "1px",
+            transition: "all 0.3s ease"
+          }}>
+            Ragul T
+          </span>
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
         <Navbar.Toggle
@@ -80,6 +94,16 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdWork style={{ marginBottom: "2px" }} /> Edu & Exp
               </Nav.Link>
             </Nav.Item>
 

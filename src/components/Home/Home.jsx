@@ -46,9 +46,9 @@ function Home2() {
               </i>
               and
               <i>
-                <b className="purple"> The Reciprocal Solutions,</b>
+                <b className="purple"> The Reciprocal Solutions.</b>
               </i>{" "}
-              where I worked on ML models, Flask APIs, PyTorch, OCR, and deployment using Docker.
+              {/* where I worked on ML models, Flask APIs, PyTorch, OCR, and deployment using Docker. */}
               <br />
               {/* <br />
               I’ve built projects like:
@@ -59,8 +59,9 @@ function Home2() {
                 <li><b className="purple">Smart Face Attendance</b> – Real-time facial attendance system</li>
               </ul>
               <br /> */}
+              <br />
               I'm skilled in
-              <b className="purple"> Python, FastAPI, Flask, PostgreSQL, React, Docker</b> and exploring
+              <b className="purple"> Machine Learning, Deep Learning, Backend Development</b> and exploring
               <b className="purple"> Generative AI & LLMs</b> for practical use cases.
               <br />
               <br />
