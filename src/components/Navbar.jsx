@@ -12,7 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  
+  AiFillGithub,
   
 } from "react-icons/ai";
 import { MdWork } from "react-icons/md";
@@ -127,7 +127,28 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-           
+            <Nav.Item>
+              <Nav.Link
+                href="https://github.com/ragultv/Portfolio"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub style={{ marginBottom: "2px", fontSize: "1.2em" }} />
+              </Nav.Link>
+            </Nav.Item>
+
+              {/* <Nav.Item>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                <img
+                  src="https://count.getloli.com/get/@ragul-portfolio-website?theme=moebooru"
+                  alt="Portfolio Website Views"
+                  style={{ height: "20px", marginLeft: "2px", verticalAlign: "middle" }}
+                />
+                <span>Views</span>
+              </span>
+            </Nav.Item> */}
+
+                
           </Nav>
         </Navbar.Collapse>
       </Container>

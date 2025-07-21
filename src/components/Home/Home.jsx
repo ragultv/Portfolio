@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
-import myImg from "../../Assets/avatar.png"; // You can replace with your photo path
+import myImg from "../../Assets/avatar.png"; 
 import Particle from "../Particle";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
@@ -72,10 +72,13 @@ function Home2() {
               who leverages AI to solve impactful problems.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="home-profile-image" alt="avatar" />
-            </Tilt>
+          <Col md={4} className="myAvtar">            
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
           </Col>
         </Row>
       </Container>
@@ -110,12 +113,9 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <Tilt>
+                <img src={myImg} className="home-profile-image" alt="avatar" />
+              </Tilt>
             </Col>
           </Row>
         </Container>
